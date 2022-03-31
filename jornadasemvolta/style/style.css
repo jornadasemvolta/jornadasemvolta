@@ -4,6 +4,7 @@
 :root{
     --cor01:#000000;
     --cor02:#14213D;
+    --cor02-shadow: #14213d91;
     /*--cor03:#FCA311;*/
     --cor03:#FFCC00;
     --cor04:#E5E5E5;
@@ -33,7 +34,7 @@ html body{
     font-family: var(--fonte-principal);
     background-color: var(--cor-predominante01);
     min-height: 100vh;
-    color: var(--cor01);
+    color: var(--cor04);
 }
 .destaque{
     color: var(--cor-destaque01);
@@ -97,12 +98,12 @@ html body{
     }
 }
 /*-------Introdução-end-------*/
-/*-------Desenvolvimento-start-------*/
-.introducao-desenvolvimento{
+/*-------desenvolvimento-shadow-start-------*/
+.introducao-desenvolvimento-shadow{
     min-height: 100px;
     background: linear-gradient(to bottom, var(--cor-predominante01), var(--cor-predominante02)) ;
 }
-/*-------Desenvolvimento-end-------*/
+/*-------desenvolvimento-shadow-end-------*/
 /*-------Vídeo-start-------*/
 .video{
     display: flex;
@@ -124,6 +125,8 @@ html body{
     width: 100%;
     padding-bottom: 56.25%;
     position: relative;
+    border: 1px solid var(--cor-predominante01);
+    box-shadow: 0 0 20px var(--cor-predominante01);
 }
 .video-iframe iframe{
     position: absolute;
@@ -131,7 +134,6 @@ html body{
     left: 0;
     width: 100%;
     height: 100%;
-    box-shadow: 0 0 20px var(--cor-predominante01);
 }
 .video-btn01{
     margin: auto;
@@ -139,12 +141,12 @@ html body{
     justify-content: center;
 }
 /*-------Vídeo-end-------*/
-/*-------Desenvolvimento-start-------*/
-.video-desenvolvimento{
+/*-------desenvolvimento-shadow-start-------*/
+.video-desenvolvimento-shadow{
     min-height: 100px;
     background: linear-gradient(to top, var(--cor-predominante01), var(--cor-predominante02)) ;
 }
-/*-------Desenvolvimento-end-------*/
+/*-------desenvolvimento-shadow-end-------*/
 /*-------Para-Quem-start-------*/
 .para-quem{
     padding: 20px;
@@ -185,18 +187,122 @@ html body{
     padding: 0 15px;
 }
 /*-------Para-Quem-end-------*/
+/*-------desenvolvimento-shadow-start-------*/
+.aprender-desenvolvimento-shadow{
+    min-height: 100px;
+    background: linear-gradient(to bottom, var(--cor-predominante01), var(--cor-predominante02)) ;
+}
+/*-------desenvolvimento-shadow-end-------*/
+/*-------Aprender-start-------*/
+.aprender{
+    background-color: var(--cor-predominante02);
+    background-image: url(../imagens/perfil/perfil-01-opaci-10.png);
+    background-position: top left;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.aprender-culunas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.aprender-coluna{
+    display: flex;
+    align-items: center;
+    background-color: var(--cor02-shadow);
+    padding: 20px;
+    max-width: 600px;
+    min-height: 500px;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px var(--cor-predominante01);
+    transition: transform, box-shadow, .6s;
+}
+.aprender-coluna:hover{
+    transform: scale(105%);
+    box-shadow: 0px 10px 5px var(--cor-predominante01);
+    background-color: var(--cor02);
+}
+.aprender-bloco-ul-organizacao{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+#done{
+    font-size: 30px;
+    font-weight: bolder;
+    padding-right: 15px;
+    color: var(--cor08);
+}
+.aprender h2{
+    text-align: center;
+    padding: 15px;
+    color: var(--cor04);
+    font-size: 3rem;
+}
+.aprender ul{
+    list-style: none;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    color: var(--cor04);
+}
+/*-------Aprender-end-------*/
+/*-------Depoimentos-start-------*/
+.depoimentos{
+    display: block;
+}
+.depoimentos-conteudo{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.depoimentos-conteudo-texto{
+    width: 800px;
+}
+.depoimentos-conteudo-texto h2{
+    padding: 20px;
+    text-align: center;
+    font-size: 3rem;
+    text-align: center;
+}
+.depoimentos p{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0 50px;
+}
+/*-------Depoimentos-end-------*/
+/*-------Biografia-start-------*/
+.biografia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.biografia-img img{
+    padding: 30px;
+    width: 450px;
+}
+.biografia-conteudo h2{
+    font-size: 3rem;
+    text-align: center;
+}
+.biografia-conteudo p{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0 50px;
+}
+/*-------Biografia-end-------*/
+
+
+
+
+
 
 /*-------X-start-------*/
 /*-------X-end-------*/
-
-
-
-
-
-
-
-
-
 
 
 
@@ -264,7 +370,11 @@ html body{
 
 /*-------Footer-start-------*/
 footer{
-    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 120px;
     padding: 10px;
     color: var(--cor04);
     text-align: center;
