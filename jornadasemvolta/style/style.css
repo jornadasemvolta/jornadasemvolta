@@ -10,7 +10,10 @@
     --cor05:#FFFFFF;
     --cor06:#1B2E55;
     /*--cor06:#233A6C;*/
-    --cor-predominante01:#E5E5E5;
+    --cor07: #23272A;
+    --cor08: #00E77E;
+    --cor-predominante01:#14213D;
+    --cor-predominante02:#1B2E55;
     --cor-suporte01:#14213D;
     --cor-destaque01:#FFCC00;
     --fonte-principal: 'Poppins', sans-serif;
@@ -40,7 +43,7 @@ html body{
 }
 /*-------Introdução-start-------*/
 .bloco-introducao{
-    background-color: var(--cor02);
+    background-color: var(--cor-predominante01);
     display: flex;
     justify-items: center;
     align-items: center;
@@ -85,11 +88,11 @@ html body{
 }
 @keyframes float{
     0%,100%{
-        box-shadow: 0 3px 3px var(--cor06);
+        box-shadow: 0 3px 3px var(--cor-predominante02);
         transform: translateY(0) rotate(0);
     }
     50%{
-        box-shadow: 10px 20px 9px var(--cor06);
+        box-shadow: 10px 20px 9px var(--cor-predominante02);
         transform: translateY(-20px) rotate(5deg);
     }
 }
@@ -97,7 +100,7 @@ html body{
 /*-------Desenvolvimento-start-------*/
 .introducao-desenvolvimento{
     min-height: 100px;
-    background: linear-gradient(to bottom, var(--cor02), var(--cor06)) ;
+    background: linear-gradient(to bottom, var(--cor-predominante01), var(--cor-predominante02)) ;
 }
 /*-------Desenvolvimento-end-------*/
 /*-------Vídeo-start-------*/
@@ -106,7 +109,7 @@ html body{
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    background-color: var(--cor06);
+    background-color: var(--cor-predominante02);
 }
 .video h2{
     color: var(--cor04);
@@ -128,7 +131,7 @@ html body{
     left: 0;
     width: 100%;
     height: 100%;
-    box-shadow: 0 0 20px var(--cor02);
+    box-shadow: 0 0 20px var(--cor-predominante01);
 }
 .video-btn01{
     margin: auto;
@@ -139,10 +142,49 @@ html body{
 /*-------Desenvolvimento-start-------*/
 .video-desenvolvimento{
     min-height: 100px;
-    background: linear-gradient(to top, var(--cor02), var(--cor06)) ;
+    background: linear-gradient(to top, var(--cor-predominante01), var(--cor-predominante02)) ;
 }
 /*-------Desenvolvimento-end-------*/
-
+/*-------Para-Quem-start-------*/
+.para-quem{
+    padding: 20px;
+    color: var(--cor04);
+    background-image: url(../imagens/logo/logo-s-opac-3.png);
+    background-position: center center;
+    background-size: 10%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.para-quem-ul{
+    width: 850px;
+}
+.para-quem-bloco-ul{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.para-quem-bloco-ul-organizacao{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.para-quem h2{
+    font-size: 3rem;
+    padding: 20px;
+}
+.para-quem ul{
+    list-style: none;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+.verified{
+    color: var(--cor-destaque01);
+    padding: 0 15px;
+}
+/*-------Para-Quem-end-------*/
 
 /*-------X-start-------*/
 /*-------X-end-------*/
@@ -171,7 +213,7 @@ html body{
     border: none;
     border-radius: 10px;
     text-decoration: none;
-    color: var(--cor02);
+    color: var(--cor-predominante01);
     font-family: var(--fonte-principal);
     font-size: 1.2rem;
     font-weight: bolder;
@@ -185,7 +227,7 @@ html body{
 }
 .btn01:hover{
     cursor: pointer;
-    color: var(--cor06);
+    color: var(--cor-predominante02);
     box-shadow: 2px 2px 5px var(--cor-destaque01);
 }
 /*-------Botão-MercadoPago-end-------*/
@@ -224,9 +266,9 @@ html body{
 footer{
     min-height: 150px;
     padding: 10px;
-    color: #ffffff;
+    color: var(--cor04);
     text-align: center;
-    background-color: #23272A;
+    background-color: var(--cor07);
 }
 /*-------Footer-end-------*/
 
