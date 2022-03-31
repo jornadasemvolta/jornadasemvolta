@@ -8,6 +8,8 @@
     --cor03:#FFCC00;
     --cor04:#E5E5E5;
     --cor05:#FFFFFF;
+    --cor06:#1B2E55;
+    /*--cor06:#233A6C;*/
     --cor-predominante01:#E5E5E5;
     --cor-suporte01:#14213D;
     --cor-destaque01:#FFCC00;
@@ -42,7 +44,7 @@ html body{
     display: flex;
     justify-items: center;
     align-items: center;
-    min-height: 90vh;
+    min-height: 80vh;
 }
 .introducao{
     padding: 20px;
@@ -62,10 +64,11 @@ html body{
 .introducao-texto-maior{
     font-size: 3rem;
     line-height: 3rem;
+    padding-bottom: 20px;
 }
 .introducao-texto{
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px 0 0 0;
     border-left: 8px solid var(--cor-destaque01);
 }
 .introducao-img{
@@ -74,11 +77,25 @@ html body{
     display: flex;
     justify-content: center;
 }
+.introducao-img img{
+    border-radius: 8%;
+    animation: float 6s ease-in-out infinite;
+}
+@keyframes float{
+    0%,100%{
+        box-shadow: 0 3px 3px var(--cor06);
+        transform: translateY(0) rotate(0);
+    }
+    50%{
+        box-shadow: 10px 20px 9px var(--cor06);
+        transform: translateY(-20px) rotate(5deg);
+    }
+}
 /*-------Introdução-end-------*/
 /*-------Desenvolvimento-start-------*/
 .introducao-desenvolvimento{
     min-height: 100px;
-    background: linear-gradient(to bottom, var(--cor-suporte01), var(--cor04)) ;
+    background: linear-gradient(to bottom, var(--cor02), var(--cor06)) ;
 }
 /*-------Introdução-end-------*/
 .teste{
