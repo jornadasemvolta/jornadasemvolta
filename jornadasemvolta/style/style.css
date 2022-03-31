@@ -10,7 +10,7 @@
     --cor05:#FFFFFF;
     --cor-predominante01:#E5E5E5;
     --cor-suporte01:#14213D;
-    --cor-destaque01:#FCA311;
+    --cor-destaque01:#FFCC00;
     --fonte-principal: 'Poppins', sans-serif;
 }
 *{
@@ -24,12 +24,63 @@
 *::selection{
     background-color: var(--cor-destaque01);
 }
-body{
+html body{
     font-family: var(--fonte-principal);
     background-color: var(--cor-predominante01);
     min-height: 100vh;
     color: var(--cor01);
 }
+.destaque{
+    color: var(--cor-destaque01);
+}
+.riscado{
+    text-decoration: line-through;
+}
+/*-------Introdução-start-------*/
+.bloco-introducao{
+    background-color: var(--cor02);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.introducao{
+    padding: 20px;
+    padding-left: 10rem;
+    padding-top: 30px;
+    color: var(--cor04);
+}
+.introducao h1{
+    font-size: 3.5rem;
+    padding: 20px 0 0;
+    font-variant: small-caps;
+    text-shadow: -1px 1px 2px var(--cor-destaque01);
+}
+.introducao-texto-h1{
+    padding-bottom: 3rem;
+}
+.introducao-texto-maior{
+    font-size: 3rem;
+    line-height: 3rem;
+}
+.introducao-texto{
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 8px solid var(--cor-destaque01);
+}
+.introducao-img{
+    min-width: 30rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+/*-------Introdução-end-------*/
+/*-------Desenvolvimento-start-------*/
+.introducao-desenvolvimento{
+    min-height: 100px;
+    background: linear-gradient(to bottom, var(--cor-suporte01), var(--cor04)) ;
+}
+/*-------Introdução-end-------*/
 .teste{
     min-height: 100vh;
 }
