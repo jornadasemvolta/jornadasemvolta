@@ -440,6 +440,9 @@ footer{
         width: 80%;
         padding: 20px;
     }
+    .aprender{
+        background-size: 50%;
+    }
 }
 @media(max-width: 800px){/*Tablet*/
     /*-------Vídeo-start-------*/
@@ -482,6 +485,9 @@ footer{
         padding: 0 20px;
         width: 400px;
     }
+    .aprender{
+        background-size: 70%;
+    }
 }
 @media(max-width: 550px){/*Mobille*/
     .introducao-texto-maior-img{
@@ -505,6 +511,9 @@ footer{
     .bloco-btn01{
         display: flex;
         justify-content: center;
+    }
+    .aprender{
+        background-size: 75%;
     }
 }
 /*-------Mídias-end-------*/
