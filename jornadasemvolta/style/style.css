@@ -42,6 +42,12 @@ html body{
 .riscado{
     text-decoration: line-through;
 }
+.config-h2{
+    color: var(--cor04);
+    text-align: center;
+    font-size: 32px;
+    padding: 20px;
+}
 /*-------Introdução-start-------*/
 .bloco-introducao{
     background-color: var(--cor-predominante01);
@@ -61,6 +67,7 @@ html body{
     font-size: 56px;
     padding: 20px 0 0;
     font-variant: small-caps;
+    line-height: 48px;
     text-shadow: -1px 1px 2px var(--cor-destaque01);
 }
 .introducao-texto-h1{
@@ -74,7 +81,7 @@ html body{
 }
 .introducao-texto{
     padding: 20px;
-    margin: 20px 0 0 0;
+    margin: 15px 0 0 0;
     font-size: 20px;
     border-left: 8px solid var(--cor-destaque01);
 }
@@ -117,11 +124,6 @@ html body{
     flex-direction: column;
     flex-wrap: nowrap;
     background-color: var(--cor-predominante02);
-}
-.video h2{
-    color: var(--cor04);
-    text-align: center;
-    font-size: 32px;
 }
 .bloco-video-iframe{
     width: 60%;
@@ -177,10 +179,6 @@ html body{
 .para-quem-bloco-ul-organizacao{
     display: flex;
     align-items: center;
-    padding: 20px;
-}
-.para-quem h2{
-    font-size: 48px;
     padding: 20px;
 }
 .para-quem ul{
@@ -244,12 +242,6 @@ html body{
     padding-right: 15px;
     color: var(--cor08);
 }
-.aprender h2{
-    text-align: center;
-    padding: 15px;
-    color: var(--cor04);
-    font-size: 48px;
-}
 .aprender ul{
     list-style: none;
     font-size: 20px;
@@ -270,12 +262,6 @@ html body{
 .depoimentos-conteudo-texto{
     width: 800px;
 }
-.depoimentos-conteudo-texto h2{
-    padding: 20px;
-    text-align: center;
-    font-size: 48px;
-    text-align: center;
-}
 .depoimentos p{
     font-size: 20px;
     text-align: center;
@@ -295,11 +281,6 @@ html body{
 .biografia-img img{
     padding: 20px;
     width: 400px;
-}
-.biografia-conteudo h2{
-    padding: 20px;
-    font-size: 48px;
-    text-align: center;
 }
 .biografia-conteudo p{
     font-size: 20px;
@@ -342,7 +323,7 @@ html body{
     outline: none;
 }
 .bloco-btn01{
-    margin: 30px 0;
+    margin: 15px 0;
 }
 .btn01:hover{
     cursor: pointer;
@@ -463,6 +444,15 @@ footer{
         padding-right: 30px;
         width: 300px;
     }
+    .introducao-desenvolvimento-shadow{
+        min-height: 60px;
+    }
+    .video-desenvolvimento-shadow{
+        min-height: 70px;
+    }
+    .aprender-desenvolvimento-shadow{
+        min-height: 70px;
+    }
 }
 @media(max-width: 700px){/*Mobille*/
     .biografia{
@@ -476,10 +466,7 @@ footer{
         display: block;
     }
     .biografia-titulo-mobille h2{
-        padding: 20px;
         padding-bottom: 0;
-        font-size: 48px;
-        text-align: center;
     }
     .biografia-img img{
         padding: 0 20px;
@@ -514,6 +501,12 @@ footer{
     }
     .aprender{
         background-size: 75%;
+    }
+    .introducao-texto-maior{
+        padding: 15px 0 30px 0;
+    }
+    .para-quem-ul{
+        width: 100%;
     }
 }
 /*-------Mídias-end-------*/
