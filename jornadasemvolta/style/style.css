@@ -124,7 +124,7 @@ html body{
     font-size: 32px;
 }
 .bloco-video-iframe{
-    width: 80%;
+    width: 60%;
     padding: 30px;
 }
 .video-iframe{
@@ -289,18 +289,23 @@ html body{
     justify-content: center;
     align-items: center;
 }
+.biografia-titulo-mobille{
+    display: none;
+}
 .biografia-img img{
-    padding: 30px;
-    width: 450px;
+    padding: 20px;
+    width: 400px;
 }
 .biografia-conteudo h2{
+    padding: 20px;
     font-size: 48px;
     text-align: center;
 }
 .biografia-conteudo p{
     font-size: 20px;
     text-align: center;
-    padding: 0 50px;
+    padding: 20px;
+    padding-top: 0;
 }
 /*-------Biografia-end-------*/
 
@@ -427,55 +432,79 @@ footer{
         align-items: center;
     }
     /*-------Introdução-end-------*/
-}
-@media(max-width: 800px){/*Tablet*/
-    /*-------Introdução-start-------*/
-    .bloco-introducao{
-        display: flex;
-        justify-items: center;
-        align-items: center;
+    .aprender-coluna{
+        max-width: 80%;
+        min-height: 10px;
     }
-    .introducao{
+    .bloco-video-iframe{
+        width: 80%;
         padding: 20px;
     }
-    .introducao-texto-h1{
-        padding-bottom: 10px;
-    }
-    .introducao-texto{
-        font-size: 15px;
-        min-height: 80px;
-    }
-    .introducao-img-tablet{
-        display: block;
-    }
-    .introducao-img-tablet img{
-        width: 200px;
-    }
-    .introducao-img{
-        display: none;
-    }
-    .introducao-texto-maior{
-        font-size: 30px;
-        line-height: 35px;
-    }
-    .introducao-texto-maior-img{
-        display: flex;
-        align-items: center;
-    }
-    /*-------Introdução-end-------*/
+}
+@media(max-width: 800px){/*Tablet*/
     /*-------Vídeo-start-------*/
     .bloco-video-iframe{
         width: 90%;
         padding: 30px;
     }
     /*-------Vídeo-end-------*/
-
+    .aprender-culunas{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .biografia-img img{
+        padding: 20px;
+        padding-right: 30px;
+        width: 300px;
+    }
+}
+@media(max-width: 700px){/*Mobille*/
+    .biografia{
+        display: flex;
+        flex-direction: column;
+    }
+    .biografia-titulo-desktop{
+        display: none;
+    }
+    .biografia-titulo-mobille{
+        display: block;
+    }
+    .biografia-titulo-mobille h2{
+        padding: 20px;
+        padding-bottom: 0;
+        font-size: 48px;
+        text-align: center;
+    }
+    .biografia-img img{
+        padding: 0 20px;
+        width: 400px;
+    }
 }
 @media(max-width: 550px){/*Mobille*/
     .introducao-texto-maior-img{
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
+    .biografia-img img{
+        padding: 0 20px;
+        width: 90%;
+    }
+    .biografia-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bloco-video-iframe{
+        width: 100%;
+        padding: 10px;
+    }
+    .bloco-btn01{
+        display: flex;
+        justify-content: center;
     }
 }
 /*-------Mídias-end-------*/
