@@ -305,7 +305,7 @@ html body{
     font-weight: bolder;
 }
 .informacao-evento-localizacao{
-    margin: 0 30px;
+    margin: 30px;
 }
 .informacao-evento-localizacao-iframe{
     border: 2px solid var(--cor-destaque01);
@@ -495,9 +495,6 @@ footer{
     }
     .informacao-evento-texto{
         padding-top: 10px;
-    }
-    .informacao-evento-localizacao{
-        margin: 30px;
     }
 }
 @media(max-width: 700px){/*Mobille*/
