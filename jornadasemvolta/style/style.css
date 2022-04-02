@@ -290,29 +290,20 @@ html body{
 }
 /*-------Biografia-end-------*/
 
-
-
-
-
-
 /*-------X-start-------*/
 /*-------X-end-------*/
 
-
-
-
-
-.teste{
-    min-height: 100vh;
-}
 /*-------Botão-MercadoPago-start-------*/
 .btn01{
     width: 300px;
     height: 65px;
-    padding: 5px;
+    padding: 10px;
     border: none;
     border-radius: 10px;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--cor-predominante01);
     font-family: var(--fonte-principal);
     font-size: 20px;
