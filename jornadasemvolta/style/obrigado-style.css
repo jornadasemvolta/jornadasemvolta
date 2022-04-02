@@ -50,7 +50,6 @@ html body{
 }
 /*-------Bloco-start-------*/
 .bloco{
-    /*background-color: var(--cor-predominante01);*/
     background-image: linear-gradient(to bottom, var(--cor-predominante01) 60%, var(--cor-predominante02)) ;
     display: flex;
     flex-direction: column;

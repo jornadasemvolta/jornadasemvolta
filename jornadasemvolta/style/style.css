@@ -48,6 +48,9 @@ html body{
     font-size: 32px;
     padding: 20px;
 }
+.espaco-teste{
+    min-height: 70vh;
+}
 /*-------Introdução-start-------*/
 .bloco-introducao{
     background-color: var(--cor-predominante01);
@@ -257,7 +260,6 @@ html body{
     display: flex;
     justify-items: center;
     justify-content: center;
-    align-items: center;
 }
 .depoimentos-conteudo-texto{
     width: 800px;
