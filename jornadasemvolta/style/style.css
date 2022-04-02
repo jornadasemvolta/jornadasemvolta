@@ -113,12 +113,12 @@ html body{
     }
 }
 /*-------Introdução-end-------*/
-/*-------desenvolvimento-shadow-start-------*/
+/*-------Desenvolvimento-shadow-start-------*/
 .introducao-desenvolvimento-shadow{
     min-height: 100px;
     background: linear-gradient(to bottom, var(--cor-predominante01), var(--cor-predominante02)) ;
 }
-/*-------desenvolvimento-shadow-end-------*/
+/*-------Desenvolvimento-shadow-end-------*/
 /*-------Vídeo-start-------*/
 .video{
     padding: 0 20px;
@@ -152,12 +152,12 @@ html body{
     justify-content: center;
 }
 /*-------Vídeo-end-------*/
-/*-------desenvolvimento-shadow-start-------*/
+/*-------Desenvolvimento-shadow-start-------*/
 .video-desenvolvimento-shadow{
     min-height: 100px;
     background: linear-gradient(to top, var(--cor-predominante01), var(--cor-predominante02)) ;
 }
-/*-------desenvolvimento-shadow-end-------*/
+/*-------Desenvolvimento-shadow-end-------*/
 /*-------Para-Quem-start-------*/
 .para-quem{
     padding: 20px;
@@ -194,12 +194,12 @@ html body{
     padding: 0 15px;
 }
 /*-------Para-Quem-end-------*/
-/*-------desenvolvimento-shadow-start-------*/
+/*-------Desenvolvimento-shadow-start-------*/
 .aprender-desenvolvimento-shadow{
     min-height: 100px;
     background: linear-gradient(to bottom, var(--cor-predominante01), var(--cor-predominante02)) ;
 }
-/*-------desenvolvimento-shadow-end-------*/
+/*-------Desenvolvimento-shadow-end-------*/
 /*-------Aprender-start-------*/
 .aprender{
     background-color: var(--cor-predominante02);
@@ -270,6 +270,54 @@ html body{
     padding: 0 50px;
 }
 /*-------Depoimentos-end-------*/
+/*-------Desenvolvimento-shadow-start-------*/
+.informacao-desenvolvimento-shadow{
+    min-height: 100px;
+    background: linear-gradient(to bottom, var(--cor-predominante01), var(--cor-predominante02)) ;
+}
+/*-------Desenvolvimento-shadow-end-------*/
+/*-------Informação-start-------*/
+.bloco-informacao-evento{
+    background-color: var(--cor-predominante02);
+}
+.informacao-evento{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.bloco-informacao-evento-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    font-size: 20px;
+}
+.informacao-evento-texto{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    text-align: start;
+}
+#material-icons-informacao{
+    color: var(--cor-destaque01);
+    padding: 0 10px 0 30px;
+    font-size: 32px;
+    font-weight: bolder;
+}
+.informacao-evento-localizacao{
+    margin: 0 30px;
+}
+.informacao-evento-localizacao-iframe{
+    border: 2px solid var(--cor-destaque01);
+    box-shadow: 0 0 8px var(--cor-destaque01);
+}
+/*-------Informação-end-------*/
+/*-------Desenvolvimento-shadow-start-------*/
+.biografia-desenvolvimento-shadow{
+    min-height: 100px;
+    background: linear-gradient(to top, var(--cor-predominante01), var(--cor-predominante02)) ;
+}
+/*-------Desenvolvimento-shadow-end-------*/
 /*-------Biografia-start-------*/
 .biografia{
     display: flex;
@@ -324,10 +372,6 @@ html body{
     box-shadow: 2px 2px 5px var(--cor-destaque01);
 }
 /*-------Botão-MercadoPago-end-------*/
-
-/*-------X-start-------*/
-/*-------X-end-------*/
-
 /*-------Botão-WhatsApp-start-------*/
 .whatsapp-btn{
     position: fixed;
@@ -419,12 +463,10 @@ footer{
     }
 }
 @media(max-width: 800px){/*Tablet*/
-    /*-------Vídeo-start-------*/
     .bloco-video-iframe{
         width: 90%;
         padding: 30px;
     }
-    /*-------Vídeo-end-------*/
     .aprender-culunas{
         display: flex;
         flex-direction: row;
@@ -445,6 +487,17 @@ footer{
     }
     .aprender-desenvolvimento-shadow{
         min-height: 70px;
+    }
+    .informacao-evento{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .informacao-evento-texto{
+        padding-top: 10px;
+    }
+    .informacao-evento-localizacao{
+        margin: 30px;
     }
 }
 @media(max-width: 700px){/*Mobille*/
