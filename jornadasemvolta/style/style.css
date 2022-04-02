@@ -335,24 +335,25 @@ html body{
 .biografia-conteudo p{
     font-size: 20px;
     text-align: center;
-    padding: 20px;
-    padding-top: 0;
-}
-.icones-redes-sociais{
-    display: flex;
-    justify-content: center;
-}
-.icones-redes-sociais img{
-    width: 80%;
-}
-.youtube img{
-    width: 110%;
+    padding: 0 20px 5px 20px;
 }
 /*-------Biografia-end-------*/
-
-/*-------X-start-------*/
-/*-------X-end-------*/
-
+/*-------Redes-Sociais-start-------*/
+.bloco-icones-redes-sociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.icones-redes-sociais{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.icones-redes-sociais img{
+    width: 80px;
+}
+/*-------Redes-Sociais-end-------*/
 /*-------Botão-MercadoPago-start-------*/
 .btn01{
     width: 300px;
