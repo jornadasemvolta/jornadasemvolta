@@ -338,6 +338,16 @@ html body{
     padding: 20px;
     padding-top: 0;
 }
+.icones-redes-sociais{
+    display: flex;
+    justify-content: center;
+}
+.icones-redes-sociais img{
+    width: 80%;
+}
+.youtube img{
+    width: 110%;
+}
 /*-------Biografia-end-------*/
 
 /*-------X-start-------*/
