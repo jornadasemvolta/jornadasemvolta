@@ -279,6 +279,8 @@ html body{
 /*-------Informação-start-------*/
 .bloco-informacao-evento{
     background-color: var(--cor-predominante02);
+    display: flex;
+    flex-direction: column;
 }
 .informacao-evento{
     display: flex;
@@ -306,10 +308,14 @@ html body{
 }
 .informacao-evento-localizacao{
     margin: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .informacao-evento-localizacao-iframe{
     border: 2px solid var(--cor-destaque01);
     box-shadow: 0 0 8px var(--cor-destaque01);
+    width: 100%;
 }
 /*-------Informação-end-------*/
 /*-------Desenvolvimento-shadow-start-------*/
@@ -350,8 +356,15 @@ html body{
     display: flex;
     align-items: center;
 }
-.icones-redes-sociais img{
-    width: 80px;
+.icones-redes-sociais-instagram{
+    width: 70px;
+}
+.icones-redes-sociais-youtube{
+    width: 100px;
+}
+.icones-a{
+    display: flex;
+    align-items: center;
 }
 /*-------Redes-Sociais-end-------*/
 /*-------Botão-MercadoPago-start-------*/
@@ -501,11 +514,12 @@ footer{
     }
     .informacao-evento{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     .informacao-evento-texto{
         padding-top: 10px;
+    }
+    .informacao-evento-localizacao-iframe{
+        width: 70%;
     }
 }
 @media(max-width: 700px){/*Mobille*/
@@ -528,6 +542,9 @@ footer{
     }
     .aprender{
         background-size: 70%;
+    }
+    .informacao-evento-localizacao-iframe{
+        width: 80%;
     }
 }
 @media(max-width: 550px){/*Mobille*/
