@@ -46,7 +46,7 @@ html body{
     height: 100vh;
     position: fixed;
     animation-name: start;
-    animation-delay: 9s;
+    animation-delay: 7s;
     animation-duration: 0;
     animation-iteration-count: 1;
     animation-timing-function: steps(1, end);
@@ -87,7 +87,7 @@ html body{
     border-radius: 20px;
     margin: 0 10px;
     animation-name: barra;
-    animation-duration: 10s;
+    animation-duration: 8s;
     animation-timing-function: ease-in-out;
     animation-delay: 0;
     animation-fill-mode: forwards;
