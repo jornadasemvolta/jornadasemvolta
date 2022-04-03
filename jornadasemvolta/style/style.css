@@ -308,7 +308,8 @@ html body{
 }
 .informacao-evento-localizacao{
     margin: 30px;
-    width: 100%;
+    margin-bottom: 0;
+    width: 500px;
     display: flex;
     justify-content: center;
 }
@@ -436,10 +437,8 @@ footer{
     background-color: var(--cor07);
 }
 /*-------Footer-end-------*/
-
 /*-------Mídias-start-------*/
 @media(max-width: 950px){/*Tablet*/
-    /*-------Introdução-start-------*/
     .bloco-introducao{
         display: flex;
         justify-items: center;
@@ -473,7 +472,6 @@ footer{
         display: flex;
         align-items: center;
     }
-    /*-------Introdução-end-------*/
     .aprender-coluna{
         max-width: 80%;
         min-height: 10px;
@@ -518,7 +516,7 @@ footer{
     .informacao-evento-texto{
         padding-top: 10px;
     }
-    .informacao-evento-localizacao-iframe{
+    .informacao-evento-localizacao{
         width: 70%;
     }
 }
@@ -543,7 +541,7 @@ footer{
     .aprender{
         background-size: 70%;
     }
-    .informacao-evento-localizacao-iframe{
+    .informacao-evento-localizacao{
         width: 80%;
     }
 }
