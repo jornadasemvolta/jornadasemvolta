@@ -51,7 +51,8 @@ html body{
     animation-iteration-count: 1;
     animation-timing-function: steps(1, end);
     animation-fill-mode: forwards;
-    z-index: 2;
+    transform: translateX(0);
+    z-index: 10;
 }
 .start h1{
     text-align: center;
@@ -627,7 +628,6 @@ footer{
         height: 50px;
     }
     .start-barra{
-        width: 5%;
         height: 25px;
     }
     .start h1{
