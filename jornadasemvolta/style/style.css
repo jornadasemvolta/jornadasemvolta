@@ -460,16 +460,19 @@ html body{
     font-weight: bolder;
     background-color: var(--cor-destaque01);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.418);
-    transition: 0.3s;
+    transition: text-shadow, box-shadow, transform, 0.25s;
     outline: none;
 }
 .bloco-btn01{
     margin: 15px 0;
+    display: flex;
+    justify-content: flex-start;
 }
 .btn01:hover{
     cursor: pointer;
-    color: var(--cor-predominante02);
-    box-shadow: 2px 2px 5px var(--cor-destaque01);
+    text-shadow: 0 0.2px 0.7px var(--cor-predominante02);
+    box-shadow: 0 2px 4px var(--cor03);
+    transform: translateY(-1.5px);
 }
 /*-------Botão-MercadoPago-end-------*/
 /*-------Botão-WhatsApp-start-------*/
@@ -499,9 +502,8 @@ html body{
 }
 /*-------Botão-WhatsApp-end-------*/
 /*-------Cookies-start-------*/
-.box-cookies .hide{
+.box-cookies.hide{
     display: none !important;
-    margin: 20px;
 }
 #material-icons-cookie{
     font-size: 38px;
@@ -545,8 +547,13 @@ html body{
     font-family: var(--fonte-principal);
     font-weight: bolder;
     font-size: 16px;
+    transition: transform, box-shadow, .3s;
 }
-@media screen and (max-width: 600px) {
+.btn-cookies:hover{
+    transform: translateY(-2px) scale(102%);
+    box-shadow: 10px 10px 10px var(--cor02-shadow);
+}
+@media(max-width: 600px) {
     .msg-cookies{
     font-size: 12px;
     }
@@ -658,6 +665,9 @@ footer{
     .bloco-start-barra{
         width: 80%;
     }
+    .bloco-video-iframe{
+        margin-top: -10px;
+    }
     .biografia{
         display: flex;
         flex-direction: column;
@@ -721,6 +731,7 @@ footer{
     .bloco-video-iframe{
         width: 100%;
         padding: 10px;
+        margin-bottom: 20px;
     }
     .bloco-btn01{
         display: flex;
