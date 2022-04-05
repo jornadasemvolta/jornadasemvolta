@@ -52,7 +52,7 @@ html body{
     animation-timing-function: steps(1, end);
     animation-fill-mode: forwards;
     transform: translateX(0);
-    z-index: 10;
+    z-index: 100;
 }
 .start h1{
     text-align: center;
@@ -498,7 +498,60 @@ html body{
     font-size: 30px;
 }
 /*-------Botão-WhatsApp-end-------*/
-
+/*-------Cookies-start-------*/
+.box-cookies .hide{
+    display: none !important;
+    margin: 20px;
+}
+#material-icons-cookie{
+    font-size: 38px;
+    text-shadow: 0 0 8px var(--cor-predominante01);
+    color: var(--cor-destaque01);
+}
+.box-cookies{
+    position: fixed;
+    background: rgba(51, 51, 51, 0.99);
+    color: var(--cor04);
+    width: 100%;
+    z-index: 99;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--fonte-principal);
+}
+.msg-cookies{
+    text-align: center;
+    padding: 25px;
+    font-size: 18px;
+}
+.msg-cookies a{
+    text-decoration: underline;
+}
+.bloco-btn-cookies{
+    height: 100%;
+    width: 250px;
+    margin: 0 20px;
+}
+.btn-cookies{
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+    border-radius: 3px;
+    background-color: var(--cor-destaque01);
+    color: rgb(46, 46, 46);
+    cursor: pointer;
+    align-self: normal;
+    font-family: var(--fonte-principal);
+    font-weight: bolder;
+    font-size: 16px;
+}
+@media screen and (max-width: 600px) {
+    .msg-cookies{
+    font-size: 12px;
+    }
+}
+/*-------Cookies-end-------*/
 /*-------Footer-start-------*/
 footer{
     display: flex;
@@ -596,6 +649,12 @@ footer{
     }
 }
 @media(max-width: 700px){/*Mobille*/
+    .box-cookies{
+        flex-direction: column;
+    }
+    .bloco-btn-cookies{
+        margin-bottom: 25px;
+    }
     .bloco-start-barra{
         width: 80%;
     }

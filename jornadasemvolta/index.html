@@ -205,6 +205,30 @@
             </button>
         </a>
     </div>
+    <div class="box-cookies hide">
+        <div class="msg-cookies">
+            <div>
+                <span class="material-icons" id="material-icons-cookie">cookie</span>
+            </div>
+            <p>Nós usamos <span class="destaque">cookies</span><!--e outras tecnologias semelhantes--> para melhorar a sua experiência em nossos serviços, personalizar publicidade e recomendar conteúdo de seu interesse. Ao utilizar nossos serviços, você concorda com tal monitoramento. Informamos ainda que atualizamos nossa <a class="destaque" href="#">Política de Privacidade</a>. Conheça também nossos <a class="destaque" href="#">Termos de Uso</a>.</p>
+        </div>
+        <div class="bloco-btn-cookies">
+            <button class="btn-cookies">Aceitar!</button>
+        </div>
+     </div>
+     <script>
+        (() => {
+        if (!localStorage.pureJavaScriptCookies) {
+            document.querySelector(".box-cookies").classList.remove('hide');
+        }
+        const acceptCookies = () => {
+            document.querySelector(".box-cookies").classList.add('hide');
+            localStorage.setItem("pureJavaScriptCookies", "accept");
+        };
+        const btnCookies = document.querySelector(".btn-cookies");
+        btnCookies.addEventListener('click', acceptCookies);
+        })();
+     </script>
     <footer>
         <h2>Jornada Sem Volta</h2>
         <p>David Silva 2022 | Todos os direitos reservados</p>
