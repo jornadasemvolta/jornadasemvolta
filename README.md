@@ -1,6 +1,9 @@
-<h1>Olá visitante👋</h1>
+# Olá visitante👋
 
 ## Acredito que acessou o link errado.
 
-## Se está em busca da JORNADA SEM VOLTA
-[Link](https://lastingbrasil.com.br/jornadasemvolta)
+### Está em busca da **JORNADA SEM VOLTA**?
+
+### - Basta clicar na imagem logo abaixo:
+
+![Link](../)
