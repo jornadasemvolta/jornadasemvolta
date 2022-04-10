@@ -333,8 +333,8 @@ html body{
 }
 .depoimentos-conteudo{
     display: flex;
-    justify-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .depoimentos-conteudo-texto{
     width: 800px;
@@ -343,6 +343,34 @@ html body{
     font-size: 20px;
     text-align: center;
     padding: 0 50px;
+}
+.depoimento-bloco-video{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    /*background-color: #00E77E;*/
+}
+.depoimento-video-iframe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.depoimento-iframe{
+    margin: 20px;
+    width: 35%;
+    padding-bottom: 19.68%;
+    position: relative;
+}
+.depoimento-iframe iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--cor-destaque01);
+    box-shadow: 0 0 15px -5px var(--cor-destaque01);
+    border-radius: 10px;
 }
 /*-------Depoimentos-end-------*/
 /*-------Desenvolvimento-shadow-start-------*/
@@ -653,6 +681,9 @@ footer{
     }
     .informacao-evento-localizacao{
         width: 70%;
+    }
+    .depoimentos-conteudo-texto{
+        width: 100%;
     }
 }
 @media(max-width: 700px){/*Mobille*/
