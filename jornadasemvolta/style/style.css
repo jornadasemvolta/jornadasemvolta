@@ -372,6 +372,10 @@ html body{
     box-shadow: 0 0 15px -5px var(--cor-destaque01);
     border-radius: 10px;
 }
+.depoimento-texto{
+    margin: 20px;
+    width: 49%;
+}
 /*-------Depoimentos-end-------*/
 /*-------Desenvolvimento-shadow-start-------*/
 .informacao-desenvolvimento-shadow{
@@ -646,6 +650,10 @@ footer{
     .aprender{
         background-size: 50%;
     }
+    .depoimento-iframe{
+        width: 45%;
+        padding-bottom: 25.31%;
+    }
 }
 @media(max-width: 800px){/*Tablet*/
     .bloco-video-iframe{
@@ -684,6 +692,10 @@ footer{
     }
     .depoimentos-conteudo-texto{
         width: 100%;
+    }
+    .depoimento-iframe{
+        width: 80%;
+        padding-bottom: 45%;
     }
 }
 @media(max-width: 700px){/*Mobille*/
