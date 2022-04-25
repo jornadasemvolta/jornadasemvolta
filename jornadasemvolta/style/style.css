@@ -35,6 +35,7 @@
 }
 html body{
     font-family: var(--fonte-principal);
+    font-display: swap;
     background-color: var(--cor-predominante01);
     min-height: 100vh;
     color: var(--cor04);
