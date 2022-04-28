@@ -1,0 +1,96 @@
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --cor01:#000000;
+    --cor02:#14213D;
+    --cor02-shadow: #14213d91;
+    /*--cor03:#FCA311;*/
+    --cor03:#FFCC00;
+    --cor04:#E5E5E5;
+    --cor05:#FFFFFF;
+    --cor06:#1B2E55;
+    /*--cor06:#233A6C;*/
+    --cor07: #23272A;
+    --cor08: #00E77E;
+    --cor-predominante01:#14213D;
+    --cor-predominante02:#1B2E55;
+    --cor-suporte01:#14213D;
+    --cor-destaque01:#FFCC00;
+    --fonte-principal: 'Poppins', sans-serif;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+*::selection{
+    background-color: var(--cor-destaque01);
+}
+html body{
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-predominante01);
+    min-height: 100vh;
+    color: var(--cor04);
+}
+.destaque{
+    color: var(--cor-destaque01);
+}
+.riscado{
+    text-decoration: line-through;
+}
+.sublinhado{
+    text-decoration: underline;
+}
+.config-h2{
+    color: var(--cor04);
+    text-align: center;
+    font-size: 32px;
+    padding: 20px;
+}
+.espaco-teste{
+    min-height: 70vh;
+}
+/*-------Main-start-------*/
+main{
+    min-height: 100vh;
+    background-image: url(../imagens/logo/logo-s-opac-3.png);
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+main h1{
+    padding: 35px 0;
+    text-align: center;
+}
+main p{
+    text-align: center;
+    font-size: 1.2em;
+    padding-bottom: 20px;
+}
+#arrow{
+    color: var(--cor-destaque01);
+    font-size: 200%;
+}
+/*-------Main-end-------*/
+/*-------Footer-start-------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 120px;
+    padding: 10px;
+    color: var(--cor04);
+    text-align: center;
+    background-color: var(--cor07);
+}
+/*-------Footer-end-------*/
