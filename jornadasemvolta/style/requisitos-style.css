@@ -80,6 +80,24 @@ main p{
     color: var(--cor-destaque01);
     font-size: 200%;
 }
+.requisitos p{
+    text-align: left;
+}
+.requisitos{
+    display: flex;
+}
+.requisitos ul{
+    list-style: none;
+}
+.requisitos-bloco-ul{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.requisitos-bloco-ul-organizacao{
+    display: flex;
+    align-items: center;
+}
 /*-------Main-end-------*/
 /*-------Footer-start-------*/
 footer{
