@@ -114,8 +114,9 @@ main{
 .participante-img img{
     width: 100px;
     margin: 10px;
+    margin-right: 20px;
     border-radius: 50%;
-    box-shadow: 0 0 4px var(--cor-destaque01);
+    box-shadow: 0 0 8px var(--cor04);
 }
 .participante-progresso{
     width: 100%;
@@ -188,6 +189,17 @@ main{
     .espaco-back-title{
         height: 0;
         margin-bottom: 20px;
+    }
+}
+@media(max-width: 550px){
+    .bloco-participante{
+        flex-direction: column;
+    }
+    .bloco-participante h2{
+        text-align: center;
+    }
+    .participante-img img{
+        margin: 10px;
     }
 }
 /*-------Mídias-end-------*/
