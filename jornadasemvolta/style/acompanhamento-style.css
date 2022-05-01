@@ -142,7 +142,6 @@ main{
 .progresso-pts-david, .progresso-fichas-david{
     height: 20px;
     background-color: var(--cor04);
-    z-index: -1;
     border-radius: 30px 0 0 30px;
 }
 /*-------Progresso-Pts-&-Fichas-end-------*/
@@ -182,13 +181,14 @@ main{
     .title-img img{
         margin-left: 0;
     }
+    /*
     .title-programa{
         position: relative;
         width: 100vw;
     }
+    */
     .espaco-back-title{
-        height: 0;
-        margin-bottom: 20px;
+        height: 190px;
     }
 }
 @media(max-width: 550px){
