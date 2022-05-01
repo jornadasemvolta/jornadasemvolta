@@ -73,9 +73,9 @@ main{
     text-align: center;
     display: flex;
     align-items: center;
-    /*background-color: var(--cor-predominante01);*/
-    backdrop-filter: brightness(60%);
+    background-color: var(--cor-predominante01);
     position: fixed;
+    z-index: 10;
 }
 .title-img{
     display: flex;
@@ -90,21 +90,61 @@ main{
     padding: 0 20px;
 }
 .espaco-back-title{
-    width: 100%;
-    height: 200px;
+    height: 100px;
 }
 /*-------Introduction-end-------*/
 /*-------Progresso-Participante-start-------*/
+.bloco-particupantes{
+    display: flex;
+    justify-content: center;
+}
 .bloco-participante{
-    width: 90%;
-    height: 300px;
-    border: 2px solid var(--cor-destaque01);
+    width: 95%;
+    min-height: 20px;
+    padding: 10px;
+    box-shadow: 0 0 10px var(--cor04);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+}
+.bloco-participante p{
+    z-index: 10;
 }
 .participante-img img{
     width: 100px;
+    margin: 10px;
     border-radius: 50%;
-    border: 2px solid var(--cor-predominante02);
+    box-shadow: 0 0 4px var(--cor-destaque01);
 }
+.participante-progresso{
+    width: 100%;
+}
+/*-------Progresso-Pts-&-Fichas-start-------*/
+/*-------Individuais-Pts-&-Fichas-start-------*/
+.progresso-pts-david{
+    width: 20%;
+}
+.progresso-fichas-david{
+    width: 10%;
+}
+/*-------Individuais--Pts-&-Fichas-end-------*/
+.progresso-pts, .progresso-fichas{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    border-radius: 30px;
+    border: 2px solid var(--cor04);
+    margin-bottom: 20px;
+}
+.progresso-pts-david, .progresso-fichas-david{
+    height: 20px;
+    background-color: var(--cor04);
+    z-index: -1;
+    border-radius: 30px 0 0 30px;
+}
+/*-------Progresso-Pts-&-Fichas-end-------*/
 /*-------Progresso-Participante-end-------*/
 /*-------Botão-WhatsApp-start-------*/
 .whatsapp-btn{
@@ -144,6 +184,10 @@ main{
     .title-programa{
         position: relative;
         width: 100vw;
+    }
+    .espaco-back-title{
+        height: 0;
+        margin-bottom: 20px;
     }
 }
 /*-------Mídias-end-------*/
