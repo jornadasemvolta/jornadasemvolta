@@ -80,30 +80,85 @@ main h1{
     font-size: 200%;
     padding-right: 10px;
 }
-.requisitos p, .como-funciona p{
+.regras p, .como-funciona p, .premiacao p{
     text-align: left;
 }
-.requisitos, .como-funciona{
+.regras, .como-funciona, .premiacao{
     display: flex;
     padding-bottom: 10px;
 }
-.requisitos ul, .como-funciona ul{
+.regras ul, .como-funciona ul, .premiacao ul{
     list-style: none;
 }
-.requisitos-bloco-ul{
+.regras-bloco-ul{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
-.requisitos-bloco-ul-organizacao{
+.regras-bloco-ul-organizacao{
     display: flex;
     align-items: center;
     padding-bottom: 10px;
 }
-.requisitos-organizacao-material-icons{
+.regras-organizacao-material-icons{
     display: flex;
 }
+.ultm-atualizacao{
+    margin-bottom: 20px;
+    font-size: 0.8em;
+}
+/*-------Botão-start-------*/
+.button{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.bloco-btn01{
+    width: 100%;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+.bloco-btn01 > a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btn01{
+    width: 50%;
+    height: 55px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-predominante01);
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: var(--cor-destaque01);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.418);
+    transition: text-shadow, box-shadow, transform, 0.25s;
+    outline: none;
+}
+.btn01:hover{
+    cursor: pointer;
+    text-shadow: 0 0.2px 0.7px var(--cor-predominante02);
+    box-shadow: 0 2px 4px var(--cor03);
+    transform: translateY(-1.5px);
+}
+/*-------Botão-end-------*/
 /*-------Main-end-------*/
+/*-------Mídias-start-------*/
+@media(max-width: 500px){
+    .btn01{
+        width: 100%;
+        margin: 20px;
+    }
+}
+/*-------Mídias-end-------*/
 /*-------Footer-start-------*/
 footer{
     display: flex;
