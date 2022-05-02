@@ -103,7 +103,7 @@ main{
     width: 95%;
     min-height: 20px;
     padding: 10px;
-    box-shadow: 0 0 5px var(--cor-destaque01);
+    border: 2px solid var(--cor-destaque01);
     border-radius: 15px;
     backdrop-filter: blur(5px);
     display: flex;
