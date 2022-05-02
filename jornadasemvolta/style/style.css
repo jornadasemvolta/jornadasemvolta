@@ -535,7 +535,7 @@ html body{
 /*-------Redes-Sociais-end-------*/
 /*-------Botão-MercadoPago-start-------*/
 .btn01{
-    width: 300px;
+    width: 500px;
     height: 65px;
     padding: 10px;
     border: none;
@@ -771,6 +771,14 @@ footer{
     }
     .bloco-start-barra{
         width: 80%;
+    }
+    .btn01{
+        width: 100%;
+    }
+    .video-btn01{
+        margin: auto;
+        width: 90%;
+        display: block;
     }
     .bloco-video-iframe{
         margin-top: -10px;
