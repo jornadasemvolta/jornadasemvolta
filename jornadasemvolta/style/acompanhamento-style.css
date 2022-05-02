@@ -205,6 +205,9 @@ main{
     }
 }
 /*-------Mídias-end-------*/
+.ultm-atualizacao{
+    margin: 20px 0;
+}
 /*-------Footer-start-------*/
 footer{
     display: flex;
