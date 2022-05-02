@@ -97,12 +97,13 @@ main{
 .bloco-particupantes{
     display: flex;
     justify-content: center;
+    margin-bottom: 35px;
 }
 .bloco-participante{
     width: 95%;
     min-height: 20px;
     padding: 10px;
-    box-shadow: 0 0 10px var(--cor04);
+    box-shadow: 0 0 5px var(--cor-destaque01);
     border-radius: 15px;
     backdrop-filter: blur(5px);
     display: flex;
@@ -124,10 +125,16 @@ main{
 /*-------Progresso-Pts-&-Fichas-start-------*/
 /*-------Individuais-Pts-&-Fichas-start-------*/
 .progresso-pts-david{
-    width: 20%;
+    width: 40%;
 }
 .progresso-fichas-david{
-    width: 10%;
+    width: 20%;
+}
+.progresso-pts-gustavo{
+    width: 20%;
+}
+.progresso-fichas-gustavo{
+    width: 70%;
 }
 /*-------Individuais--Pts-&-Fichas-end-------*/
 .progresso-pts, .progresso-fichas{
@@ -139,7 +146,7 @@ main{
     border: 2px solid var(--cor04);
     margin-bottom: 20px;
 }
-.progresso-pts-david, .progresso-fichas-david{
+.progresso-pts-david, .progresso-fichas-david, .progresso-pts-gustavo, .progresso-fichas-gustavo{
     height: 20px;
     background-color: var(--cor04);
     border-radius: 30px 0 0 30px;
@@ -181,12 +188,6 @@ main{
     .title-img img{
         margin-left: 0;
     }
-    /*
-    .title-programa{
-        position: relative;
-        width: 100vw;
-    }
-    */
     .espaco-back-title{
         height: 190px;
     }
