@@ -104,7 +104,6 @@ main{
     width: 95%;
     min-height: 20px;
     padding: 10px;
-    
     border-radius: 15px;
     backdrop-filter: blur(5px);
     display: flex;
